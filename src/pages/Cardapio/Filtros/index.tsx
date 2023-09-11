@@ -10,9 +10,9 @@ type IOpcao = typeof filtros[0];
 
 export default function Filtros() {
     return(
-        <div>
+        <div className={styles.filtro}>
             {filtros.map((opcao) => (
-                <button key={opcao.id}>
+                <button className={styles.filtro__filtro} key={opcao.id}>
                     {opcao.label}
                 </button>
             ))}
